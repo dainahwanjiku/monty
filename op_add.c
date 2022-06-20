@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * m_add - add the top two elements of the stack
+ * add - add the top two elements of the stack
  * @stack: double pointer tot he beginning of the stack
  * @line_number: script line number
  *
  * Return: void
  */
-void m_add(stack_t **stack, unsigned int line_number)
+void op_add(stack_t **stack, unsigned int line_number)
 {
 	int n = 0;
 
