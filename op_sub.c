@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * m_sub - subtract top element of stack from next element and push result
+ * sub - subtract top element of stack from next element and push result
  * @stack: double pointer to head of stack
  * @line_number: line number of current operation
  *
  * Return: void
  */
-void m_sub(stack_t **stack, unsigned int line_number)
+void op_sub(stack_t **stack, unsigned int line_number)
 {
 	int n;
 
@@ -19,6 +19,6 @@ void m_sub(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	n = (*stack)->n;
-	m_pop(stack, line_number);
+	op_pop(stack, line_number);
 	(*stack)->n -= n;
 }
